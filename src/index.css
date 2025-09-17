@@ -21,6 +21,7 @@ img {
 
 :root::-webkit-scrollbar {
   width: 10px;
+  display: none;
 }
 :root::-webkit-scrollbar-thumb {
   background-color: #bd3757;
