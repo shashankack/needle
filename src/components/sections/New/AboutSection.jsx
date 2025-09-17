@@ -103,7 +103,7 @@ const AboutSection = () => {
               md: 6,
             }}
           >
-            <Box
+            {/* <Box
               sx={{
                 borderRadius: 2,
                 height: { xs: 240, md: 360 },
@@ -112,6 +112,15 @@ const AboutSection = () => {
                 boxShadow: 1,
                 backgroundImage:
                   "linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0) 40%), radial-gradient(circle at 30% 20%, rgba(0,0,0,0.04), transparent 45%)",
+              }}
+            /> */}
+            <Box
+              component="img"
+              src="/images/temp.jpg"
+              sx={{
+                borderRadius: 2,
+                height: { xs: 240, md: 360 },
+                objectFit: "cover",
               }}
             />
           </Grid>
