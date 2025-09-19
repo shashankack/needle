@@ -9,15 +9,12 @@ import {
   Stack,
   Button,
   Divider,
-  Chip,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import CheckroomIcon from "@mui/icons-material/Checkroom";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import CompostIcon from "@mui/icons-material/Compost";
-// If you use react-helmet-async in your app, you can uncomment:
-// import { Helmet } from "react-helmet-async";
 
 const Section = ({ children, bg, id, py = { xs: 6, md: 10 } }) => (
   <Box component="section" id={id} sx={{ bgcolor: bg, py }}>
@@ -25,45 +22,52 @@ const Section = ({ children, bg, id, py = { xs: 6, md: 10 } }) => (
   </Box>
 );
 
-const ValueCard = ({ icon, title, desc, accent }) => (
-  <Card
-    elevation={0}
-    sx={{
-      height: "100%",
-      borderRadius: 2,
-      border: (t) => `1px solid ${t.palette.beige}`,
-      bgcolor: (t) => t.palette.white,
-      transition: "transform .2s ease, box-shadow .2s ease",
-      "&:hover": { transform: "translateY(-2px)", boxShadow: 3 },
-    }}
-  >
-    <CardContent sx={{ p: 3 }}>
-      <Box
-        sx={{
-          width: 48,
-          height: 48,
-          borderRadius: "50%",
-          display: "grid",
-          placeItems: "center",
-          mb: 2,
-          bgcolor: (t) => t.palette.beige,
-          color: accent,
-        }}
-      >
-        {icon}
-      </Box>
-      <Typography
-        variant="h6"
-        sx={{ mb: 1, color: (t) => t.palette.green, fontWeight: 700 }}
-      >
-        {title}
-      </Typography>
-      <Typography variant="body2" sx={{ color: "#6b5842", lineHeight: 1.7 }}>
-        {desc}
-      </Typography>
-    </CardContent>
-  </Card>
-);
+const ValueCard = ({ icon, title, desc, accent }) => {
+  const theme = useTheme();
+  return (
+    <Card
+      elevation={0}
+      sx={{
+        height: "100%",
+        borderRadius: 2,
+        border: `1px solid ${theme.palette.primary.main}`,
+        bgcolor: theme.palette.background.default,
+        transition: "transform .2s ease, box-shadow .2s ease",
+        "&:hover": { transform: "translateY(-2px)", boxShadow: 1 },
+      }}
+    >
+      <CardContent sx={{ p: 3 }}>
+        <Box
+          sx={{
+            width: 48,
+            height: 48,
+            borderRadius: "50%",
+            display: "grid",
+            placeItems: "center",
+            mb: 2,
+            bgcolor: theme.palette.primary.main + "18",
+            color: theme.palette.primary.main,
+          }}
+        >
+          {icon}
+        </Box>
+        <Typography
+          variant="h6"
+          sx={{ mb: 1, color: theme.palette.primary.main, fontWeight: 700 }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{ color: theme.palette.text.primary, lineHeight: 1.7 }}
+          textAlign={"justify"}
+        >
+          {desc}
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
 
 const AboutPage = () => {
   const theme = useTheme();
@@ -72,7 +76,7 @@ const AboutPage = () => {
     {
       icon: <CheckroomIcon />,
       title: "Elegance & Craftsmanship",
-      desc: "Impeccable construction, intricate detailing, and finishes that last—each piece is made to be worn and re-worn.",
+      desc: "Impeccable construction, intricate detailing, and finishes that last each piece is made to be worn and re-worn.",
     },
     {
       icon: <AutoAwesomeIcon />,
@@ -87,7 +91,7 @@ const AboutPage = () => {
     {
       icon: <CompostIcon />,
       title: "Sustainability",
-      desc: "Ethical practices, small-batch production, and eco-friendly materials—responsibility woven into every step.",
+      desc: "Ethical practices, small-batch production, and eco-friendly materials responsibility woven into every step.",
     },
   ];
 
@@ -106,28 +110,18 @@ const AboutPage = () => {
       <Box
         component="header"
         sx={{
-          bgcolor: theme.palette.beige,
-          borderBottom: `1px solid ${theme.palette.white}`,
+          bgcolor: theme.palette.background.default,
+          borderBottom: `1px solid ${theme.palette.primary.main}22`,
         }}
       >
         <Container maxWidth="lg" sx={{ py: { xs: 8, md: 12 } }}>
           <Stack spacing={2} alignItems="center" textAlign="center">
-            <Chip
-              label="About Us"
-              sx={{
-                bgcolor: theme.palette.white,
-                color: theme.palette.green,
-                borderColor: theme.palette.white,
-                fontFamily: theme.fonts?.primary,
-              }}
-              variant="outlined"
-            />
             <Typography
               variant="h1"
               sx={{
-                fontFamily: theme.fonts?.primary,
+                fontFamily: theme.typography.fontFamily,
                 fontSize: { xs: "2rem", md: "3rem" },
-                color: theme.palette.green,
+                color: theme.palette.primary.main,
                 lineHeight: 1.2,
               }}
             >
@@ -137,12 +131,12 @@ const AboutPage = () => {
               variant="subtitle1"
               sx={{
                 maxWidth: 800,
-                color: "#6b5842",
-                fontFamily: theme.fonts?.primary,
+                color: theme.palette.text.primary,
+                fontFamily: theme.typography.fontFamily,
               }}
             >
               Needle is an upscale Bengaluru boutique blending traditional
-              Indian craftsmanship with modern Western design—elevating every
+              Indian craftsmanship with modern Western design - elevating every
               celebration, one thread at a time.
             </Typography>
           </Stack>
@@ -150,7 +144,7 @@ const AboutPage = () => {
       </Box>
 
       {/* STORY */}
-      <Section id="story" bg={theme.palette.white}>
+      <Section id="story" bg={theme.palette.background.default}>
         <Grid container spacing={4} alignItems="center">
           <Grid
             size={{
@@ -161,8 +155,7 @@ const AboutPage = () => {
             <Typography
               variant="h4"
               sx={{
-                fontFamily: theme.fonts?.primary,
-                color: theme.palette.green,
+                fontFamily: theme.typography.fontFamily,
                 mb: 2,
               }}
             >
@@ -170,19 +163,20 @@ const AboutPage = () => {
             </Typography>
             <Typography
               variant="body1"
-              sx={{ color: "#6b5842", lineHeight: 1.9 }}
+              sx={{ color: "text.primary", lineHeight: 1.9 }}
+              textAlign={"justify"}
             >
               Born from a love for heritage and a passion for design, Needle is
               where handwork meets modern tailoring. We partner closely with
               artisan clusters and independent ateliers, ensuring fair wages,
-              safe working conditions, and room to grow. Small-batch production,
-              careful sourcing, and low-impact dyeing help us honor the
-              craft—and the planet.
+              safe working conditions, and room to grow. Small batch production,
+              careful sourcing, and low-impact dyeing help us honor the craft
+              and the planet.
               <br />
               <br />
               From handwoven silks and breathable cottons to heirloom-worthy
-              embroideries, each Needle piece carries the soul of its
-              origin—techniques passed down through generations, reimagined with
+              embroideries, each Needle piece carries the soul of its origin
+              techniques passed down through generations, reimagined with
               contemporary ease.
             </Typography>
           </Grid>
@@ -217,15 +211,22 @@ const AboutPage = () => {
       </Section>
 
       {/* VALUES */}
-      <Section id="values" bg={theme.palette.white} py={{ xs: 4, md: 6 }}>
+      <Section
+        id="values"
+        bg={theme.palette.background.default}
+        py={{ xs: 4, md: 6 }}
+      >
         <Divider
-          sx={{ mb: { xs: 4, md: 6 }, borderColor: theme.palette.beige }}
+          sx={{
+            mb: { xs: 4, md: 6 },
+            borderColor: theme.palette.primary.main + "22",
+          }}
         />
         <Typography
           variant="h4"
           sx={{
-            fontFamily: theme.fonts?.primary,
-            color: theme.palette.green,
+            fontFamily: theme.typography.fontFamily,
+            color: theme.palette.primary.main,
             textAlign: "center",
             mb: 3,
           }}
@@ -255,7 +256,7 @@ const AboutPage = () => {
       </Section>
 
       {/* CRAFT & PROCESS */}
-      <Section id="process" bg={theme.palette.white}>
+      <Section id="process" bg={theme.palette.background.default}>
         <Grid
           container
           spacing={4}
@@ -272,8 +273,8 @@ const AboutPage = () => {
               sx={{
                 borderRadius: 2,
                 height: { xs: 220, md: 320 },
-                bgcolor: theme.palette.white,
-                border: `1px dashed ${theme.palette.beige}`,
+                bgcolor: theme.palette.background.default,
+                border: `1px dashed ${theme.palette.primary.main}22`,
                 boxShadow: "none",
               }}
             >
@@ -289,8 +290,8 @@ const AboutPage = () => {
                     width: 120,
                     height: 120,
                     borderRadius: 2,
-                    bgcolor: theme.palette.beige,
-                    border: `1px solid ${theme.palette.beige}`,
+                    bgcolor: theme.palette.primary.main + "18",
+                    border: `1px solid ${theme.palette.primary.main}22`,
                   }}
                 />
                 <Box
@@ -298,8 +299,8 @@ const AboutPage = () => {
                     width: 120,
                     height: 160,
                     borderRadius: 2,
-                    bgcolor: theme.palette.beige,
-                    border: `1px solid ${theme.palette.beige}`,
+                    bgcolor: theme.palette.primary.main + "18",
+                    border: `1px solid ${theme.palette.primary.main}22`,
                   }}
                 />
                 <Box
@@ -307,8 +308,8 @@ const AboutPage = () => {
                     width: 120,
                     height: 120,
                     borderRadius: 2,
-                    bgcolor: theme.palette.beige,
-                    border: `1px solid ${theme.palette.beige}`,
+                    bgcolor: theme.palette.primary.main + "18",
+                    border: `1px solid ${theme.palette.primary.main}22`,
                   }}
                 />
               </Stack>
@@ -324,8 +325,8 @@ const AboutPage = () => {
             <Typography
               variant="h4"
               sx={{
-                fontFamily: theme.fonts?.primary,
-                color: theme.palette.green,
+                fontFamily: theme.typography.fontFamily,
+                color: theme.palette.primary.main,
                 mb: 2,
               }}
             >
@@ -333,7 +334,7 @@ const AboutPage = () => {
             </Typography>
             <Typography
               variant="body1"
-              sx={{ color: "#6b5842", lineHeight: 1.9 }}
+              sx={{ color: theme.palette.text.primary, lineHeight: 1.9 }}
             >
               We build thoughtfully: from responsible sourcing to meticulous
               finishing. By working directly with skilled makers, we protect
@@ -348,10 +349,10 @@ const AboutPage = () => {
       {/* BESPOKE CTA */}
       <Box
         sx={{
-          bgcolor: theme.palette.beige,
+          bgcolor: theme.palette.background.default,
           py: { xs: 6, md: 8 },
-          borderTop: `1px solid ${theme.palette.white}`,
-          borderBottom: `1px solid ${theme.palette.white}`,
+          borderTop: `1px solid ${theme.palette.primary.main}22`,
+          borderBottom: `1px solid ${theme.palette.primary.main}22`,
         }}
       >
         <Container maxWidth="lg">
@@ -359,15 +360,19 @@ const AboutPage = () => {
             <Typography
               variant="h4"
               sx={{
-                fontFamily: theme.fonts?.primary,
-                color: theme.palette.green,
+                fontFamily: theme.typography.fontFamily,
+                color: theme.palette.primary.main,
               }}
             >
               Bespoke & Personal
             </Typography>
             <Typography
               variant="body1"
-              sx={{ maxWidth: 800, color: "#6b5842", lineHeight: 1.9 }}
+              sx={{
+                maxWidth: 800,
+                color: theme.palette.text.primary,
+                lineHeight: 1.9,
+              }}
             >
               Weddings, festive moments, or a one-of-a-kind idea—co-create with
               our design team. Choose fabrics, silhouettes, and embellishments
@@ -381,14 +386,14 @@ const AboutPage = () => {
               <Button
                 variant="contained"
                 sx={{
-                  bgcolor: theme.palette.green,
-                  color: theme.palette.white,
+                  bgcolor: theme.palette.primary.main,
+                  color: theme.palette.background.default,
                   px: 3,
                   py: 1.25,
                   borderRadius: 2,
-                  fontFamily: theme.fonts?.primary,
+                  fontFamily: theme.typography.fontFamily,
                   textTransform: "none",
-                  "&:hover": { bgcolor: theme.palette.green },
+                  "&:hover": { bgcolor: theme.palette.secondary.main },
                 }}
                 href="/custom"
               >
@@ -397,16 +402,16 @@ const AboutPage = () => {
               <Button
                 variant="outlined"
                 sx={{
-                  borderColor: theme.palette.red,
-                  color: theme.palette.red,
+                  borderColor: theme.palette.primary.main,
+                  color: theme.palette.primary.main,
                   px: 3,
                   py: 1.25,
                   borderRadius: 2,
-                  fontFamily: theme.fonts?.primary,
+                  fontFamily: theme.typography.fontFamily,
                   textTransform: "none",
                   "&:hover": {
-                    borderColor: theme.palette.red,
-                    bgcolor: theme.palette.white,
+                    borderColor: theme.palette.secondary.main,
+                    bgcolor: theme.palette.background.default,
                   },
                 }}
                 href="/lookbook"
@@ -419,18 +424,25 @@ const AboutPage = () => {
       </Box>
 
       {/* CONTACT / VISIT */}
-      <Section id="visit" bg={theme.palette.white} py={{ xs: 6, md: 8 }}>
+      <Section
+        id="visit"
+        bg={theme.palette.background.default}
+        py={{ xs: 6, md: 8 }}
+      >
         <Stack spacing={1.5} alignItems="center" textAlign="center">
           <Typography
             variant="h5"
             sx={{
-              fontFamily: theme.fonts?.primary,
-              color: theme.palette.green,
+              fontFamily: theme.typography.fontFamily,
+              color: theme.palette.primary.main,
             }}
           >
             Crafted in Bengaluru. Made to be worn anywhere.
           </Typography>
-          <Typography variant="body2" sx={{ color: "#6b5842" }}>
+          <Typography
+            variant="body2"
+            sx={{ color: theme.palette.text.primary }}
+          >
             Visit our studio or write to us for appointments and custom
             consultations.
           </Typography>
@@ -442,13 +454,13 @@ const AboutPage = () => {
             <Button
               variant="outlined"
               sx={{
-                borderColor: theme.palette.beige,
-                color: theme.palette.green,
+                borderColor: theme.palette.primary.main,
+                color: theme.palette.primary.main,
                 px: 2.5,
                 borderRadius: 2,
-                fontFamily: theme.fonts?.primary,
+                fontFamily: theme.typography.fontFamily,
                 textTransform: "none",
-                "&:hover": { borderColor: theme.palette.green },
+                "&:hover": { borderColor: theme.palette.secondary.main },
               }}
               href="/contact"
             >
@@ -457,11 +469,11 @@ const AboutPage = () => {
             <Button
               variant="text"
               sx={{
-                color: theme.palette.red,
-                fontFamily: theme.fonts?.primary,
+                color: theme.palette.secondary.main,
+                fontFamily: theme.typography.fontFamily,
                 textTransform: "none",
               }}
-              href="/find-us"
+              href="https://maps.app.goo.gl/1vBfUN5QvMSE75YN6"
             >
               Find Us in Bengaluru →
             </Button>

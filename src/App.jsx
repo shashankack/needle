@@ -1,10 +1,12 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import NavbarNew from "./components/NavbarNew";
+import Navbar from "./components/Navbar";
 import Loader from "./components/Loader.jsx";
 
 import HomePage from "./pages/HomePage";
+import ContactPage from "./pages/ContactPage.jsx";
+import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";
 
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -12,12 +14,13 @@ const Footer = lazy(() => import("./components/Footer"));
 const App = () => {
   return (
     <>
-      <NavbarNew />
+      <Navbar />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutPage />} />
-          <Route path="/contact" element={<div>Contact Page</div>} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/product/:productId" element={<ProductDetailsPage />} />
         </Routes>
         <Footer />
       </Suspense>

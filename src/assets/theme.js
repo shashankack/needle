@@ -2,14 +2,41 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
   palette: {
-    red: "#BD3757",
-    white: "#F8F4E7",
-    beige: "#F4E6CD",
-    green: "#2F6B50",
+    primary: {
+      main: "#BD3757",
+    },
+    secondary: {
+      main: "#2F6B50",
+    },
+    background: {
+      default: "#f4e6cd",
+    },
+    text: {
+      primary: "#2F6B50",
+      secondary: "#BD3757",
+    },
   },
 
-  fonts: {
-    primary: "Montserrat, sans-serif",
+  typography: {
+    fontFamily: "'Montserrat', sans-serif",
+    h1: {
+      color: "#BD3757",
+    },
+    h2: {
+      color: "#BD3757",
+    },
+    h3: {
+      color: "#BD3757",
+    },
+    h4: {
+      color: "#BD3757",
+    },
+    h5: {
+      color: "#BD3757",
+    },
+    h6: {
+      color: "#BD3757",
+    },
   },
 });
 

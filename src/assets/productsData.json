@@ -1,6 +1,152 @@
 [
   {
+    "id": 1,
+    "slug": "blush-pink-banarasi-silk-saree-silver-zari",
     "title": "Blush Pink Banarasi Silk Saree with Silver Zari Border",
+    "price": {
+      "mrp": "₹18,999",
+      "offer_price": "₹12,499"
+    },
+    "features": {
+      "saree_length": "5.5 Mts",
+      "blouse_piece": "0.90 Mts (Unstitched)",
+      "material": "100% Pure Banarasi Silk",
+      "work": "Hand-woven Silver Zari",
+      "color": "Blush Pink",
+      "occasion": "Wedding, Festive",
+      "care": "Dry Clean Only",
+      "origin": "Varanasi, India"
+    },
+    "description": "Embrace timeless elegance with this exquisite handwoven Blush Pink Banarasi Silk Saree. Crafted by master weavers in Varanasi, this saree features intricate silver zari work that creates beautiful motifs across the body. The rich silk fabric drapes gracefully, making it perfect for weddings and special celebrations. Each piece is a work of art, representing centuries of traditional Indian craftsmanship.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "BSS001",
+    "weight": "650g",
+    "thumbnail": "/product_thumbnails/DSC09478.webp"
+  },
+  {
+    "id": 2,
+    "slug": "ivory-cream-kanjivaram-saree-black-gold-border",
+    "title": "Ivory Cream Kanjivaram Saree with Black and Gold Border",
+    "price": {
+      "mrp": "₹22,499",
+      "offer_price": "₹15,299"
+    },
+    "features": {
+      "saree_length": "5.5 Mts",
+      "blouse_piece": "0.90 Mts (Unstitched)",
+      "material": "Pure Kanjivaram Silk",
+      "work": "Traditional Temple Border Design",
+      "color": "Ivory Cream with Black Border",
+      "occasion": "Wedding, Traditional Functions",
+      "care": "Dry Clean Only",
+      "origin": "Kanchipuram, Tamil Nadu"
+    },
+    "description": "This stunning Kanjivaram saree showcases the finest silk weaving traditions of South India. The ivory cream base is beautifully contrasted with a rich black and gold border featuring traditional temple motifs. Known for their durability and lustrous finish, Kanjivaram sarees are treasured heirlooms that can be passed down through generations.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "KSS002",
+    "weight": "750g",
+    "thumbnail": "/product_thumbnails/DSC09604.webp"
+  },
+  {
+    "id": 3,
+    "slug": "coral-red-banarasi-silk-saree-floral-zari",
+    "title": "Coral Red Banarasi Silk Saree with Floral Zari",
+    "price": {
+      "mrp": "₹16,999",
+      "offer_price": "₹11,499"
+    },
+    "features": {
+      "saree_length": "5.5 Mts",
+      "blouse_piece": "0.90 Mts (Unstitched)",
+      "material": "Pure Banarasi Silk",
+      "work": "Hand-woven Floral Zari",
+      "color": "Coral Red with Gold Accents",
+      "occasion": "Wedding, Festival, Celebration",
+      "care": "Dry Clean Only",
+      "origin": "Varanasi, India"
+    },
+    "description": "This vibrant Coral Red Banarasi Silk Saree radiates warmth and festivity with its intricate floral zari patterns. Master craftsmen from Varanasi have woven delicate roses and paisleys across the rich silk fabric, creating a harmonious blend of traditional artistry and contemporary appeal. The lustrous coral hue symbolizes joy and prosperity, making it an ideal choice for auspicious occasions.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "BSS003",
+    "weight": "680g",
+    "thumbnail": "/product_thumbnails/DSC09631.webp"
+  },
+  {
+    "id": 4,
+    "slug": "lavender-silk-saree-golden-yellow-border",
+    "title": "Lavender Silk Saree with Golden Yellow Border",
+    "price": {
+      "mrp": "₹14,499",
+      "offer_price": "₹9,999"
+    },
+    "features": {
+      "saree_length": "5.5 Mts",
+      "blouse_piece": "0.90 Mts (Unstitched)",
+      "material": "Pure Mulberry Silk",
+      "work": "Contrast Zari Border Weave",
+      "color": "Lavender with Golden Yellow Border",
+      "occasion": "Festive, Evening Functions",
+      "care": "Dry Clean Only",
+      "origin": "Bangalore, Karnataka"
+    },
+    "description": "Experience ethereal beauty with this dreamy Lavender Silk Saree featuring a striking golden yellow border. The soft lavender base creates a calming elegance while the vibrant yellow border adds a contemporary twist to traditional design. Crafted from finest mulberry silk, this saree offers a perfect balance of grace and glamour for modern celebrations.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "MSS004",
+    "weight": "620g",
+    "thumbnail": "/product_thumbnails/DSC09655.webp"
+  },
+  {
+    "id": 5,
+    "slug": "royal-blue-silk-saree-green-border",
+    "title": "Royal Blue Silk Saree with Green Border",
+    "price": {
+      "mrp": "₹13,999",
+      "offer_price": "₹9,299"
+    },
+    "features": {
+      "saree_length": "5.5 Mts",
+      "blouse_piece": "0.90 Mts (Unstitched)",
+      "material": "Handloom Pure Silk",
+      "work": "Traditional Temple Border",
+      "color": "Royal Blue with Emerald Green Border",
+      "occasion": "Wedding, Traditional Functions",
+      "care": "Dry Clean Only",
+      "origin": "Pochampally, Telangana"
+    },
+    "description": "This magnificent Royal Blue Silk Saree embodies regal sophistication with its deep blue hue and contrasting emerald green border. Handwoven by skilled artisans using traditional Pochampally techniques, this saree features geometric patterns that reflect India's rich textile heritage. The lustrous silk fabric drapes beautifully, making it a timeless addition to any wardrobe.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "HSS005",
+    "weight": "640g",
+    "thumbnail": "/product_thumbnails/DSC09686.webp"
+  },
+  {
+    "id": 6,
+    "slug": "pastel-grey-silk-saree-gold-polka-weave",
+    "title": "Pastel Grey Silk Saree with Gold Polka Weave",
+    "price": {
+      "mrp": "₹15,999",
+      "offer_price": "₹10,799"
+    },
+    "features": {
+      "saree_length": "5.5 Mts",
+      "blouse_piece": "0.90 Mts (Unstitched)",
+      "material": "Premium Soft Silk",
+      "work": "Gold Polka Zari Weave",
+      "color": "Pastel Grey with Golden Accents",
+      "occasion": "Contemporary Functions, Office Parties",
+      "care": "Dry Clean Only",
+      "origin": "Mysore, Karnataka"
+    },
+    "description": "Sophistication meets playfulness in this unique Pastel Grey Silk Saree adorned with delicate gold polka dots. The subtle grey base provides an elegant canvas for the scattered golden motifs, creating a contemporary interpretation of traditional weaving. Perfect for the modern woman who appreciates understated luxury and wants to make a refined statement.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "SSS006",
+    "weight": "590g",
+    "thumbnail": "/product_thumbnails/DSC09716.webp"
+  },
+  {
+    "id": 7,
+    "slug": "ivory-linen-silk-saree-red-floral-border",
+    "title": "Ivory Linen Silk Saree with Red Floral Border",
     "price": {
       "mrp": "₹12,999",
       "offer_price": "₹8,499"
@@ -8,155 +154,89 @@
     "features": {
       "saree_length": "5.5 Mts",
       "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "100% Pure Silk",
-      "work": "Intricate Silver Zari Weave",
-      "color": "Blush Pink with Subtle Sheen"
-    },
-    "description": "Step into timeless elegance with this exquisite Blush Pink Banarasi Silk Saree. Crafted from pure silk, it features a rich silver zari border that adds grace and sophistication. Perfect for weddings, festive occasions, and grand celebrations, this saree drapes beautifully and shines with a subtle yet luxurious charm. Paired with an unstitched blouse piece, it allows you to style it your way for a regal statement.",
-    "thumbnail": "/product_thumbnails/DSC09478.webp"
-  },
-  {
-    "title": "Ivory Cream Kanjivaram Saree with Black and Gold Border",
-    "price": {
-      "mrp": "₹13,499",
-      "offer_price": "₹9,299"
-    },
-    "features": {
-      "saree_length": "5.5 Mts",
-      "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Kanjivaram Silk",
-      "work": "Traditional Gold Zari Motifs",
-      "color": "Ivory with Black & Gold Accents"
-    },
-    "description": "A classic blend of ivory cream and striking black, this Kanjivaram silk saree is adorned with golden zari motifs and a rich border. Ideal for festive wear and traditional occasions, it offers elegance with a regal charm.",
-    "thumbnail": "/product_thumbnails/DSC09604.webp"
-  },
-  {
-    "title": "Coral Red Banarasi Silk Saree with Floral Zari",
-    "price": {
-      "mrp": "₹14,499",
-      "offer_price": "₹10,299"
-    },
-    "features": {
-      "saree_length": "5.5 Mts",
-      "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Banarasi Silk",
-      "work": "Floral Zari Weaving",
-      "color": "Coral Red with Gold Accents"
-    },
-    "description": "Bright and festive, this Coral Red Banarasi Silk Saree is detailed with intricate floral zari weaving. Perfect for weddings and grand occasions, it ensures a statement-making traditional look.",
-    "thumbnail": "/product_thumbnails/DSC09631.webp"
-  },
-  {
-    "title": "Lavender Silk Saree with Golden Yellow Border",
-    "price": {
-      "mrp": "₹12,499",
-      "offer_price": "₹8,799"
-    },
-    "features": {
-      "saree_length": "5.5 Mts",
-      "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Pure Silk",
-      "work": "Zari Border Weave",
-      "color": "Lavender with Yellow Contrast"
-    },
-    "description": "Soft lavender tones paired with a bold golden yellow border make this silk saree a graceful yet striking choice. Elegant drapes and subtle shine make it perfect for festive celebrations.",
-    "thumbnail": "/product_thumbnails/DSC09655.webp"
-  },
-  {
-    "title": "Royal Blue Silk Saree with Green Border",
-    "price": {
-      "mrp": "₹11,999",
-      "offer_price": "₹8,299"
-    },
-    "features": {
-      "saree_length": "5.5 Mts",
-      "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Handloom Silk",
-      "work": "Simple Zari Border",
-      "color": "Royal Blue with Green Hints"
-    },
-    "description": "An evergreen favorite, this Royal Blue Silk Saree with a green border is elegant and versatile. Light yet rich, it’s suitable for weddings, functions, and evening wear.",
-    "thumbnail": "/product_thumbnails/DSC09686.webp"
-  },
-  {
-    "title": "Pastel Grey Silk Saree with Gold Polka Weave",
-    "price": {
-      "mrp": "₹13,999",
-      "offer_price": "₹9,599"
-    },
-    "features": {
-      "saree_length": "5.5 Mts",
-      "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Soft Silk",
-      "work": "Gold Polka Zari Weave",
-      "color": "Pastel Grey with Golden Accents"
-    },
-    "description": "Minimal yet luxurious, this pastel grey silk saree is highlighted with golden polka weaving. Its subtle sheen makes it perfect for contemporary as well as traditional occasions.",
-    "thumbnail": "/product_thumbnails/DSC09716.webp"
-  },
-  {
-    "title": "Ivory Linen Silk Saree with Red Floral Border",
-    "price": {
-      "mrp": "₹10,999",
-      "offer_price": "₹7,499"
-    },
-    "features": {
-      "saree_length": "5.5 Mts",
-      "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Linen Silk",
+      "material": "Linen Silk Blend",
       "work": "Printed Floral & Zari Border",
-      "color": "Ivory with Red & Multicolor Accents"
+      "color": "Ivory with Red & Multicolor Accents",
+      "occasion": "Casual Festive, Day Functions",
+      "care": "Gentle Hand Wash or Dry Clean",
+      "origin": "Chanderi, Madhya Pradesh"
     },
-    "description": "This Ivory Linen Silk Saree with a vibrant red floral border brings together modern prints and traditional zari. Light and breathable, it’s perfect for casual festive gatherings.",
+    "description": "This charming Ivory Linen Silk Saree combines comfort with elegance through its breathable linen-silk blend and vibrant red floral border. The natural ivory base is adorned with traditional folk art-inspired floral prints in rich red and multicolor hues. Lightweight and easy to drape, this saree is perfect for daytime celebrations and casual gatherings.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "LSS007",
+    "weight": "480g",
     "thumbnail": "/product_thumbnails/DSC09747.webp"
   },
   {
+    "id": 8,
+    "slug": "soft-pink-silk-saree-floral-weave",
     "title": "Soft Pink Silk Saree with Floral Weave",
     "price": {
-      "mrp": "₹12,499",
-      "offer_price": "₹8,599"
+      "mrp": "₹14,999",
+      "offer_price": "₹9,799"
     },
     "features": {
       "saree_length": "5.5 Mts",
       "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Pure Silk",
-      "work": "Floral Zari Weave",
-      "color": "Soft Pink"
+      "material": "Pure Tussar Silk",
+      "work": "Intricate Floral Zari Weave",
+      "color": "Soft Pink with Gold Highlights",
+      "occasion": "Wedding, Engagement, Festivals",
+      "care": "Dry Clean Only",
+      "origin": "Bhagalpur, Bihar"
     },
-    "description": "Delicate and feminine, this Soft Pink Silk Saree is adorned with woven floral motifs. Elegant and graceful, it’s ideal for weddings, pujas, and traditional occasions.",
+    "description": "Delicate femininity is captured in this beautiful Soft Pink Silk Saree featuring exquisite floral zari work. The gentle pink hue evokes romance and grace, while the handwoven floral motifs in gold create an enchanting garden-like pattern across the silk. Made from premium Tussar silk known for its natural texture and sheen, this saree is perfect for intimate celebrations and romantic occasions.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "TSS008",
+    "weight": "610g",
     "thumbnail": "/product_thumbnails/DSC09780.webp"
   },
   {
+    "id": 9,
+    "slug": "black-banarasi-silk-saree-golden-zari",
     "title": "Black Banarasi Silk Saree with Golden Zari",
     "price": {
-      "mrp": "₹15,499",
-      "offer_price": "₹10,899"
+      "mrp": "₹19,999",
+      "offer_price": "₹13,499"
     },
     "features": {
       "saree_length": "5.5 Mts",
       "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Banarasi Silk",
+      "material": "Premium Banarasi Silk",
       "work": "Heavy Golden Zari Weaving",
-      "color": "Black with Antique Gold"
+      "color": "Deep Black with Antique Gold",
+      "occasion": "Wedding, Evening Functions, Formal Events",
+      "care": "Dry Clean Only",
+      "origin": "Varanasi, India"
     },
-    "description": "Regal and timeless, this Black Banarasi Silk Saree is crafted with intricate golden zari detailing. A perfect choice for weddings and evening functions, it radiates grandeur.",
+    "description": "Epitomizing timeless elegance, this Black Banarasi Silk Saree with heavy golden zari work is a masterpiece of Indian textile artistry. The deep black silk provides a dramatic backdrop for the intricate golden patterns that tell stories of Mughal heritage. Each thread of gold zari is carefully woven to create paisleys, florals, and geometric designs that shimmer with every movement.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "BSS009",
+    "weight": "780g",
     "thumbnail": "/product_thumbnails/DSC09525.webp"
   },
   {
+    "id": 10,
+    "slug": "golden-mustard-banarasi-silk-saree",
     "title": "Golden Mustard Banarasi Silk Saree",
     "price": {
-      "mrp": "₹14,999",
-      "offer_price": "₹10,499"
+      "mrp": "₹17,999",
+      "offer_price": "₹12,299"
     },
     "features": {
       "saree_length": "5.5 Mts",
       "blouse_piece": "0.90 Mts (Unstitched)",
-      "material": "Banarasi Silk",
-      "work": "Rich Zari Weave",
-      "color": "Golden Mustard"
+      "material": "Pure Banarasi Silk",
+      "work": "Rich Traditional Zari Weave",
+      "color": "Golden Mustard with Bronze Highlights",
+      "occasion": "Wedding, Grand Celebrations, Festivals",
+      "care": "Dry Clean Only",
+      "origin": "Varanasi, India"
     },
-    "description": "A bold statement piece, this Golden Mustard Banarasi Silk Saree is highlighted with rich zari work. Ideal for grand occasions, it enhances traditional looks with opulence.",
+    "description": "This stunning Golden Mustard Banarasi Silk Saree radiates opulence and grandeur with its rich golden hue and elaborate zari work. The warm mustard color symbolizes prosperity and auspiciousness in Indian culture, making it an ideal choice for wedding ceremonies and grand celebrations. Traditional paisley and floral motifs are intricately woven with bronze-toned zari, creating a luxurious texture that catches light beautifully.",
+    "availability": "In Stock - Only 1 Piece Available",
+    "sku": "BSS010",
+    "weight": "720g",
     "thumbnail": "/product_thumbnails/DSC09559.webp"
   }
 ]
