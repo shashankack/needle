@@ -7,6 +7,7 @@ import Loader from "./components/Loader.jsx";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage.jsx";
 import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";
+import GalleryPage from "./pages/GalleryPage.jsx";
 
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/product/:productId" element={<ProductDetailsPage />} />
         </Routes>
         <Footer />

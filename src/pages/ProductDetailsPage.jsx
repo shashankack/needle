@@ -627,7 +627,10 @@ const ProductDetailsPage = () => {
                     },
                     cursor: "pointer",
                   }}
-                  onClick={() => navigate(`/product/${relatedProduct.id}`)}
+                  onClick={() => {
+                    navigate(`/product/${relatedProduct.id}`);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   <Box
                     component="img"

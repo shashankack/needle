@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "@emotion/react";
+import { ThemeProvider } from "@mui/material/styles";
 import theme from "./assets/theme.js";
 
 createRoot(document.getElementById("root")).render(

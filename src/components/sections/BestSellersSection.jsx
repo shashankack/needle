@@ -41,7 +41,7 @@ const BestSellersSection = () => {
     cursor: "pointer",
     "&:hover": {
       transform: "translateY(-8px)",
-      boxShadow: `0 12px 40px rgba(189, 55, 87, 0.25)`,
+      // boxShadow: `0 12px 40px rgba(189, 55, 87, 0.25)`,
     },
   };
 
@@ -98,7 +98,7 @@ const BestSellersSection = () => {
           style={{
             "--swiper-navigation-color": "#f4e6cd",
             "--swiper-pagination-color": "#BD3757",
-            padding: "2px",
+            padding: "10px",
           }}
           spaceBetween={24}
           navigation
@@ -127,7 +127,10 @@ const BestSellersSection = () => {
               <SwiperSlide key={i} style={{ height: "auto", display: "flex" }}>
                 <Card
                   sx={cardStyles}
-                  onClick={() => navigate(`/product/${p.id}`)}
+                  onClick={() => {
+                    navigate(`/product/${p.id}`)
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   {hasDiscount && (
                     <Chip

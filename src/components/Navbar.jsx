@@ -30,7 +30,7 @@ const NavbarNew = () => {
       { name: "Shop", path: "#", hasDropdown: true },
       { name: "About Us", path: "/about-us" },
       { name: "Contact", path: "/contact" },
-      { name: "Gallery", path: "#" },
+      { name: "Gallery", path: "/gallery" },
     ],
     [
       { name: "Search", path: "#", icon: <SearchIcon /> },
